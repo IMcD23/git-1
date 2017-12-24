@@ -23,7 +23,7 @@ static void restore_sigpipe_to_default(void)
 	signal(SIGPIPE, SIG_DFL);
 }
 
-int main(int argc, const char **argv)
+int git_main(int argc, const char **argv)
 {
 	/*
 	 * Always open file descriptors 0/1/2 to avoid clobbering files
